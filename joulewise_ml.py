@@ -9,7 +9,6 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_absolute_error, r2_score
 import joblib
 
-
 @dataclass
 class SolarConfig:
     """Domain + training configuration."""
@@ -219,7 +218,6 @@ class JoulewiseML:
             "payback_years": round(payback_years, 1),
             "shadow_factor": round(shadow_factor, 3),
         }
-
 
 if __name__ == "__main__":
     joule = JoulewiseML()
